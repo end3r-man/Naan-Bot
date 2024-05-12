@@ -68,6 +68,7 @@ return [
 
     'providers' => [
         App\Providers\BotServiceProvider::class,
+        Livewire\LivewireServiceProvider::class,
     ],
 
 ];
