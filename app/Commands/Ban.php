@@ -70,7 +70,7 @@ class Ban extends Command
 
             $mem = $message->guild->members->get('id', $use);
             
-            $message->guild->members->kick($mem, 'Goodbye!');
+            $mem->ban($mem, 'Goodbye!');
 
             return $this
                 ->message()
